@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js",
     "nodemon": "nodemon src/app.js",
-    "build": "babel src -d dist",
-    "prod": "node dist/app.js"
+    "dist": "babel src -d dist",
+    "build": "npm install && npm run dist && node build.js"
   },
   "repository": {
     "type": "git",
