@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"  # Todas as rotas
+  to = "/"  # Redirecionar todas as rotas
+  status = 200  # Status de redirecionamento
+
+[[plugins]]
+  package = "@netlify/plugin-functions"  
