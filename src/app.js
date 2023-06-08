@@ -6,10 +6,10 @@ const port = 3000
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Api Restful')
+  res.send('Exercício 1 - Montagem de uma API RESTful - Rafael Lucas ')
 })
 
-app.use('/produtos', produtosRoutes);
+app.use('/api/produtos', produtosRoutes);
 
 app.listen(port, () => {
   console.log(`Servidor iniciado na porta ${port}`)
