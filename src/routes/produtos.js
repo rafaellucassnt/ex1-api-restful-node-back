@@ -7,7 +7,6 @@ router.get('/', (req, res) => {
   res.json(lista_produtos.produtos);
 });
 
-
 router.get('/:id', (req, res) => {
   const id = parseInt(req.params.id);
   const produto = lista_produtos.produtos.find(item => item.id === id);
@@ -18,7 +17,6 @@ router.get('/:id', (req, res) => {
     res.status(404).json({ mensagem: 'Produto não encontrado' });
   }
 });
-
 
 router.post('/', (req, res) => {
   const { id, descricao, valor, marca } = req.body;
